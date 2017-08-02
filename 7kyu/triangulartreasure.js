@@ -13,7 +13,8 @@
 
 // Return the nth triangular number
 function triangular( n ) {
-  var num = Math.abs(n);
 
-    return ((num / 2) * (num + 1)) * (num / n) || 0;
+  if (n < 0) {
+    return 0
+  } else return ((n / 2) * (n + 1)) * (n / n) || 0;
 }
